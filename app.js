@@ -11,6 +11,7 @@ function getTranslationUrl(text) {
 
 function errorHandler(error) {
     divOutput.innerText = "";
+    errorOutput.style.color = "red";
     errorOutput.innerText = "There are too many requests sent to the server in a given amount of time. Please try again later.";
 }
 
@@ -25,6 +26,7 @@ function clickEventHandler() {
             errorOutput.innerText = "";
     } else {
         divOutput.innerText = "";
+        errorOutput.style.color = "red";
         errorOutput.innerText = "Please type something...";
     }
 
